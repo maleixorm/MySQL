@@ -1,0 +1,10 @@
+select * from gafanhotos order by peso;
+select * from gafanhotos where sexo = 'F' order by nome;
+select * from gafanhotos where nascimento between '2000-01-01' and '2015-12-31' order by nascimento;
+select * from gafanhotos where profissao = 'programador' and sexo = 'M' order by nome;
+select * from gafanhotos where sexo = 'F' and nacionalidade ='brasil' and nome like 'j%';
+select nome, nacionalidade from gafanhotos where nome like '%silva%' and nacionalidade != 'brasil' and peso < '100' order by nome;
+select max(altura) from gafanhotos where nacionalidade = 'brasil';
+select avg(peso) from gafanhotos;
+select min(peso) from gafanhotos where sexo = 'F' and nacionalidade != 'brasil' and nascimento between '1990-01-01' and '2000-12-31';
+select count(altura) from gafanhotos where sexo = 'F' and altura > '1.90';
