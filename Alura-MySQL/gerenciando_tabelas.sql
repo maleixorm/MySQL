@@ -18,11 +18,21 @@ VOLUME_COMPRA float,
 PRIMEIRA_COMPRA bit(1)
 );
 
-create table tabela_de_vendedores
+create table tbvendedores
 (
 MATRICULA varchar(5),
 NOME varchar(100),
 PERCENTUAL_COMISSAO float
 );
 
-drop table tabela_de_vendedores;
+create table tbproduto
+(
+PRODUTO varchar(20),
+NOME varchar(150),
+EMBALAGEM varchar(50),
+TAMANHO varchar(50),
+SABOR varchar(50),
+PRECO_LISTA float
+);
+
+drop table tbvendedores;
