@@ -7,3 +7,5 @@ create table users (
 select * from users;
 
 select * from videos;
+
+update videos set image_path = null where id=13;
